@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  fedora-coreos-images:
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2024-08-26T23:53:14.465823093Z"
+    description: A Helm chart providing a nginx server and Fedora CoreOS images to
+      download
+    digest: 7b38d24cb998c5a99043e1d2f386e29dc6a45e7a8b6137dc73b71a9fd36eb724
+    name: fedora-coreos-images
+    type: application
+    urls:
+    - https://github.com/hauke-cloud/helm-charts/releases/download/fedora-coreos-images-0.0.2/fedora-coreos-images-0.0.2.tgz
+    version: 0.0.2
+generated: "2024-08-26T23:53:14.465834604Z"
