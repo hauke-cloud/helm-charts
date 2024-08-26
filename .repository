@@ -1,9 +1,0 @@
----
-title: Helm Charts
-description: Repository containing helm charts used by hauke.cloud
-logo: ""
-docker_image_registry: "ghrc.io"
-docker_image_namespace: "hauke-cloud/example"
-docker_image_version: "latest"
-helm_repository: "https://hauke-cloud.github.io/helm-charts"
-helm_chart: "example"
