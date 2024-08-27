@@ -22,6 +22,7 @@ jobs:
 
   docs:
     runs-on: ubuntu-latest
+    needs: list-charts
     strategy:
       matrix:
         chart: ${{fromJson(needs.list-charts.outputs.charts)}}
