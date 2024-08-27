@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        chart: ${{ fromJson(needs.list-charts.outputs.charts) }}
+        chart: ${{fromJson(needs.list-charts.outputs.charts)}}
 
     steps:
       - name: Checkout
