@@ -14,9 +14,10 @@ jobs:
       - name: List chart directories
         id: charts
         run: |
-          charts=$(ls charts)
-          echo "Found charts: $charts"
-          echo "charts=$charts" >> $GITHUB_OUTPUT
+          CHARTS=$(ls charts)
+          echo "Found charts: $CHARTS"
+          CHART_ARRAY=$(echo $CHARTS | jq -R 'split(" ")')
+          echo "charts=${CHART_ARRAY}" >> $GITHUB_OUTPUT
 
   docs:
     runs-on: ubuntu-latest
