@@ -16,8 +16,8 @@ jobs:
         run: |
           CHARTS=$(ls charts)
           echo "Found charts: $CHARTS"
-          CHART_ARRAY=$(echo $CHARTS | jq -R 'split(" ")')
-          echo "charts=${CHART_ARRAY}" >> $GITHUB_OUTPUT
+          CHART_ARRAY=$(echo $CHARTS | jq -cR 'split(" ")')
+          echo "charts=$CHART_ARRAY" >> $GITHUB_OUTPUT
 
   docs:
     runs-on: ubuntu-latest
