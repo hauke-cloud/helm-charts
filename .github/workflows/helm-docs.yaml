@@ -9,7 +9,7 @@ jobs:
       charts: ${{ steps.charts.outputs.charts }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: List chart directories
         id: charts
@@ -17,6 +17,7 @@ jobs:
           CHARTS=$(ls charts)
           echo "Found charts: $CHARTS"
           CHART_ARRAY=$(echo $CHARTS | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "charts=$CHART_ARRAY"
           echo "charts=$CHART_ARRAY" >> $GITHUB_OUTPUT
 
   docs:
