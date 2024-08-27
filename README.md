@@ -1,10 +1,10 @@
 
 
-# Template Repository
+# Helm Charts
 
 <img src="https://raw.githubusercontent.com/hauke-cloud/.github/main/resources/img/organisation-logo-small.png" align="right" alt="hauke.cloud logo" width="109" height="123">
 
-Template repository for hauke.cloud projects
+Repository containing helm charts used by hauke.cloud
 
 ## Table of Contents
 
