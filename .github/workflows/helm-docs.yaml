@@ -3,29 +3,8 @@ name: Check that docs are generated
 on: push
 
 jobs:
-  list-charts:
-    runs-on: ubuntu-latest
-    outputs:
-      charts: ${{ steps.charts.outputs.charts }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: List chart directories
-        id: charts
-        run: |
-          CHARTS=$(ls charts)
-          echo "Found charts: $CHARTS"
-          CHART_ARRAY=$(echo $CHARTS | jq -R -s -c 'split("\n") | map(select(. != ""))')
-          echo "charts=$CHART_ARRAY"
-          echo "charts=$CHART_ARRAY" >> $GITHUB_OUTPUT
-
   docs:
     runs-on: ubuntu-latest
-    needs: list-charts
-    strategy:
-      matrix:
-        chart: ${{fromJson(needs.list-charts.outputs.charts)}}
 
     steps:
       - name: Checkout
@@ -35,7 +14,6 @@ jobs:
         uses: gabe565/setup-helm-docs-action@v1
 
       - name: Create helm docs
-        working-directory: "./charts/${{ matrix.chart }}"
         run: |
           helm-docs
 
