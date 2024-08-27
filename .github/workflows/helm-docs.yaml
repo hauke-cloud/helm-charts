@@ -15,7 +15,7 @@ jobs:
 
       - name: Create helm docs
         run: |
-          helm-docs
+          helm-docs --skip-version-footer
 
       - name: Delete last line and remove helm docs version
         working-directory: "./charts/${{ matrix.chart }}"
