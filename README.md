@@ -3,18 +3,20 @@
 # Helm Charts
 
 <div style="display: flex; justify-content: flex-end;">
-  <img src="https://raw.githubusercontent.com/hauke-cloud/.github/main/resources/img/organisation-logo-small.png" align="right" alt="hauke.cloud logo" width="109" height="123">
+  <img src="https://raw.githubusercontent.com/hauke-cloud/.github/main/resources/img/organisation-logo-small.png" alt="hauke.cloud logo" width="109" height="123">
   <div style="display: flex; flex-direction: column; align-items: flex-end; margin-top: 10px;">
     <a href="https://hauke.cloud" target="_blank">
-      <img src="https://img.shields.io/badge/home-hauke.cloud-brightgreen" align="right" alt="hauke.cloud" />
+      <img src="https://img.shields.io/badge/home-hauke.cloud-brightgreen" alt="hauke.cloud" />
     </a>
     <a href="https://github.com/hauke-cloud" target="_blank">
-      <img src="https://img.shields.io/badge/github-hauke.cloud-blue" align="right" alt="hauke.cloud Github Organisation" />
+      <img src="https://img.shields.io/badge/github-hauke.cloud-blue" alt="hauke.cloud Github Organisation" />
     </a>
   </div>
 </div>
 
+<p align="left">
 Repository containing helm charts used by hauke.cloud
+</p>
 
 ## Table of Contents
 
