@@ -17,11 +17,8 @@ Repository containing helm charts used by hauke.cloud
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-## 🚀 Getting started
 
-## :wrench: Configuration
 
-## :airplane: Usage
 
 ## 📄 License
 
