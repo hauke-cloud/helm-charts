@@ -10,8 +10,6 @@ Repository containing helm charts used by hauke.cloud
 
 ## Table of Contents
 
-- [Getting started](#-getting-started)
-- [Usage](#-usage)
 - [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
