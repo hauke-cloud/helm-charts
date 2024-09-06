@@ -10,9 +10,44 @@ Repository containing helm charts used by hauke.cloud
 
 ## Table of Contents
 
+- [Getting started](#-getting-started)
 - [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
+
+## 🚀 Getting started
+Before you begin, ensure you have the following:
+
+- A Kubernetes cluster
+- [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and configured to interact with your cluster
+- The [fluxv2](https://github.com/fluxcd/flux2) operator installed
+- Flux CLI installed [fluxv2-cli](https://github.com/fluxcd/flux2)
+
+To get started, you need to clone the repository containing this `README.md` file. Follow the steps below:
+
+### 1. Clone the repository
+
+Use the following command to clone the repository:
+
+```bash
+git clone https://github.com/hauke-cloud/helm-charts.git
+```
+
+### 2. Navigate to the repository directory
+
+Once the repository is cloned, navigate to the directory:
+
+```bash
+cd helm-charts
+```
+
+### 3. Check the content
+
+```bash
+ls -la
+```
+
+This will display all the files and directories in the cloned repository.
 
 
 
